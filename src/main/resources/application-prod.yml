@@ -1,0 +1,6 @@
+person:
+  name: pron-张三
+  age: 38
+
+server:
+  port: 8080

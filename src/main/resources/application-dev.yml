@@ -1,0 +1,8 @@
+profile:
+  name: evangelionvr~_!开发_Dev   # 姓名
+  age: 18   # 年龄
+
+
+server:
+  port: 8088
+

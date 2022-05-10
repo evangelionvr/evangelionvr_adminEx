@@ -1,0 +1,90 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 500MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jdbc:
+    template:  # 数据源模板
+      query-timeout: 10    # 查询超时时间
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    lettuce:   # lettuce redis
+      pool:
+        max-active: 10   # 最大连接数
+        max-idle: 5      #最大空闲数
+        max-wait: 1000  # 最大等待时间
+  boot:
+    admin:
+      client:
+        url: http://localhost:8888
+        instance:
+          prefer-ip: true    # 优先使用ip
+  application:
+    name: evangelionvr
+  profiles:
+    active: profile,dev,prod,python
+
+
+
+
+server:
+  error:
+    path: /error   # 错误页面
+  reactive:  # 异步
+    session: # session
+      timeout: 60   # 超时时间
+
+      #配置mybatis的规则
+mybatis:
+#  config-location: classpath:mybatis/mybatis-config.xml   # mybatis配置文件   不能和springboot的配置文件同时使用,一般不使用全局配置文件.都使用配置项
+  mapper-locations: classpath:mybatis/mapper/*.xml   # mybatis mapper文件
+  configuration:    # mybatis配置项,指定mybatis的配置文件(全局配置文件)
+    map-underscore-to-camel-case: true   # 将下划线转换为驼峰
+
+
+#managerment
+
+
+    #mybatis的配置规则
+    # 1. 导入mybatis的官方starter
+    # 2. 编写mapper接口
+    # 3. 编写SQL映射文件并绑定mapper接口
+    # 4.在application.yml指定mapper接口
+management:
+  endpoints:
+    enabled-by-default: true   #默认开启所有的endpoint
+    web:
+      exposure:
+        include: '*'   # 包含所有的endpoint
+  health:
+    path: /health   # 健康检查
+    metrics:
+      path: /metrics   # 度量检查
+    elasticsearch:
+      path: /elasticsearch   # elasticsearch检查
+      enabled: false   #开启elasticsearch检查
+  endpoint:
+    health:
+      enabled: true           # 开启健康检查
+      show-details: always   # 开启健康检查
+    metrics:
+      enabled: true           # 开启度量检查
+      show-details: always   # 开启度量检查
+    info:
+      enabled: true           #开启info检查
+      show-details: always   #开启info检查
+
+
+
+info:
+  appName: springboot-evangleionvr   # 应用名称
+  appVersion: 1.0.0   # 应用版本
+
+
+
+

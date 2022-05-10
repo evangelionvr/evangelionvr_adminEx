@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liaofan.adminex.Mapper.CityMapper">
+
+    <!--插入城市信息-->
+    <insert id="insertCity" parameterType="java.util.HashMap" useGeneratedKeys="true" keyProperty="id" >
+        INSERT INTO city(name, state, country) VALUES (#{name}, #{state}, #{country})
+    </insert>
+
+</mapper>
