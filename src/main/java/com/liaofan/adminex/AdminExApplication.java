@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author evangelion
+ */
 @ServletComponentScan(basePackages = "com.liaofan.adminex")  //指定原生servlet组件都放在哪里
 @SpringBootApplication
 @MapperScan("com.liaofan.adminex.Mapper")   //建议直接写,批量扫描
@@ -27,10 +30,7 @@ public class AdminExApplication {
         System.out.println("systemEnvironment:" + systemEnvironment);
         System.out.println("systemProperties:" + systemProperties);
 
-        RunnerPythonBase runnerPythonBase = new RunnerPythonBase();
-        List paramList = new ArrayList();
-        paramList.add("1");
-        RunnerPythonBase.JavaRunnerPython_Covert(paramList);
+
 
     }
 

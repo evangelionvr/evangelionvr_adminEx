@@ -73,6 +73,84 @@
 
 
 
+#### 同步
+
+```java
+package com.liaofan.JavaAdvanced.JUC;
+
+import lombok.extern.slf4j.Slf4j;
+
+import java.io.FileReader;
+
+@Slf4j
+public class Sync {
+    public static void main(String[] args) {
+        //读取mp3文件
+        FileReader fr = null;
+        try {
+            System.out.println("开始读取mp3文件" + System.currentTimeMillis());
+            fr = new FileReader("F:\\CloudMusic\\梁静茹 - 呵护.mp3");
+            char[] buf = new char[1024];
+            int len = 0;
+            while ((len = fr.read(buf)) != -1) {
+                //System.out.println(new String(buf, 0, len));
+            }
+            System.out.println("读取mp3文件结束" + System.currentTimeMillis());
+        } catch (Exception e) {
+            log.error("读取文件失败", e);
+        }
+
+
+        log.debug("end");
+    }
+}
+
+```
+
+
+
+#### 异步
+
+```java
+```
+
+
+
+### 1.1C应用
+
+#### 应用之异步调用
+
+从方法调用的角度来讲，如果
+
+- 需要等待结果返回，才能继续运行就是同步
+- 不需要等待结果返回，就能继续运行就是异步
+
+注意:同步在多线程中还有另外-一层意思，是让多个线程步调一致
+
+##### 1)设计
+
+多线程可以让方法执行变为异步的(即不要巴巴干等着)比如说读取磁盘文件时，假设读取操作花费了5秒
+钟，如果没有线程调度机制，这5秒调用者什么都做不了，其代码都得暂停...
+
+##### 2)结论
+
+●	比如在项目中，视频文件需要转换格式等操作比较费时，这时开一个新线程处理视频转换，避免阻塞主线
+程
+■	tomcat的异步servlet也是类似的目的，让用户线程处理耗时较长的操作，避免阻塞tomcat的工作线程
+●	ui程序中，开线程进行其他操作，避免阻塞ui线程
+
+#### 应用之提高效率
+
+![image-20220513000135892](C:\Users\evangelion\AppData\Roaming\Typora\typora-user-images\image-20220513000135892.png)
+
+##### 2) 结论
+
+![image-20220513000242104](C:\Users\evangelion\AppData\Roaming\Typora\typora-user-images\image-20220513000242104.png)
+
+
+
+
+
 
 
 ### 1.2 线程的创建和启动

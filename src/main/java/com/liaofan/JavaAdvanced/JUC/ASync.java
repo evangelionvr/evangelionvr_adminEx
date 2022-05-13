@@ -9,6 +9,7 @@ import java.io.IOException;
 /**
  * 异步方法
  */
+@SuppressWarnings("AlibabaAvoidManuallyCreateThread")
 @Slf4j
 public class ASync {
     public static void main(String[] args) {
