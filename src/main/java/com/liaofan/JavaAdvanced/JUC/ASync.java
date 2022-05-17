@@ -8,9 +8,10 @@ import java.io.IOException;
 
 /**
  * 异步方法
+ * 多线程是java唯一可以实现异步的方式
  */
-@SuppressWarnings("AlibabaAvoidManuallyCreateThread")
-@Slf4j
+@SuppressWarnings("AlibabaAvoidManuallyCreateThread")   // 不提示
+@Slf4j   // 日志
 public class ASync {
     public static void main(String[] args) {
         new Thread(() -> {

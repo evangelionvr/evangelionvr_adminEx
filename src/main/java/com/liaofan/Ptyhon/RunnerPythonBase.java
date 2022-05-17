@@ -20,9 +20,9 @@ public class RunnerPythonBase {
     public static void main(String[] args) {
         List<String> paramList = new ArrayList<String>();
         paramList.add("http://www.baidu.com");
-        paramList.add("form");
-        paramList.add("class");
-        paramList.add("fm");
+        //paramList.add("form");
+        //paramList.add("class");
+        //paramList.add("fm");
         //String content = JavaRunnerPython_Covert(paramList);
         //System.out.println(content);
 
