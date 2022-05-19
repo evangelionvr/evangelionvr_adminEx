@@ -40,11 +40,13 @@ public class MultiThread_Core_Extends extends Thread {
         t1.start();
 
         MultiThread_Core_Extends t2 = new MultiThread_Core_Extends("线程2");
-        t2.setPriority(Thread.MAX_PRIORITY);   //设置优先级
-        t2.setDaemon(true);                    //设置守护线程+守护线程会在主线程结束后自动结束,那是不是说明主线程结束后，守护线程也会结束？
+        //设置优先级
+        t2.setPriority(Thread.MAX_PRIORITY);
+        //设置守护线程+守护线程会在主线程结束后自动结束,那是不是说明主线程结束后，守护线程也会结束？
+        t2.setDaemon(true);
 
-
-        System.out.println(Thread.currentThread().getName());   //获取当前线程名称
+        //获取当前线程名称
+        System.out.println(Thread.currentThread().getName());
 
         //4.启动线程
         t2.start();

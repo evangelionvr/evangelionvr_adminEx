@@ -30,7 +30,7 @@ public class Distinguish_Thread_Runable {
     }
 
     /**
-     * 测试线程
+     * 测试线程_主线程
      *
      */
     public static void test_Thread() {
@@ -40,7 +40,6 @@ public class Distinguish_Thread_Runable {
                 log.debug("t1");
             }
         };
-
         t1.start();
     }
 }

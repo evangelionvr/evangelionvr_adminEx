@@ -30,7 +30,6 @@ public class MultiThread_Core_Yield implements Runnable {
         Thread t2 = new Thread(new MultiThread_Core_Yield("t2"));
         t1.start();
         t2.start();
-
     }
 
     @Override
