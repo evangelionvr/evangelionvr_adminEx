@@ -53,8 +53,8 @@ public class CreateThread {
         thread_taskRunnable_2.start();
 
         /**
-         * 方法4   方法三，FutureTask 配合 Thread
-         * FutureTask 能够接收 Callable 类型的参数，用来处理有返回结果的情况
+         * 方法4   方法三，FutureTaskTest 配合 Thread
+         * FutureTaskTest 能够接收 Callable 类型的参数，用来处理有返回结果的情况
          */
         FutureTask<Integer> task_futrue = new FutureTask<Integer>(() -> {
             log.debug("task");
