@@ -1,6 +1,6 @@
 package com.liaofan.JavaAdvanced.DesignModel.AbstractFactoryPattern;
 
-import com.liaofan.JavaAdvanced.DesignModel.FactoryPattern.Shape;
+
 
 /**
  * 圆圈类
