@@ -8,6 +8,10 @@ package com.liaofan.JavaAdvanced.DesignModel.BuilderPattern;
  * @version: 1.0
  */
 public class MealBuild {
+    /**
+     * 构造素食套餐的方法
+     * @return
+     */
     public Meal preparVegMeal() {
         Meal meal = new Meal();
         meal.addItem(new VegBurger());
@@ -15,6 +19,10 @@ public class MealBuild {
         return meal;
     }
 
+    /**
+     * 构造非素食套餐
+     * @return
+     */
     public Meal preparNonVegMeal() {
         Meal meal = new Meal();
         meal.addItem(new ChickenBurger());

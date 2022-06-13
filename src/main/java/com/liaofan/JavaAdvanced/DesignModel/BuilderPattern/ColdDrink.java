@@ -1,6 +1,6 @@
 package com.liaofan.JavaAdvanced.DesignModel.BuilderPattern;
 
-/**
+/** 冰镇饮品类
  * @author 廖钒
  * @ClassName ColdDrink
  * @description: TODO

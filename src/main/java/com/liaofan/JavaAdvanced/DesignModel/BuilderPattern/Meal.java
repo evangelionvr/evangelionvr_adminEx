@@ -3,7 +3,7 @@ package com.liaofan.JavaAdvanced.DesignModel.BuilderPattern;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/** 定义一个套餐对象
  * @author 廖钒
  * @ClassName Meal 套餐类
  * @description: TODO
@@ -18,7 +18,7 @@ public class Meal {
     private List<Food> items = new ArrayList<>();
 
     /**
-     * 添加食物到列表
+     * 添加食物到套餐
      *
      * @param item  食物对象
      */

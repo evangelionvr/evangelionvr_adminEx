@@ -1,6 +1,6 @@
 package com.liaofan.JavaAdvanced.DesignModel.BuilderPattern;
 
-/**
+/**汉堡类
  * @author 廖钒
  * @ClassName Burger
  * @description: TODO
