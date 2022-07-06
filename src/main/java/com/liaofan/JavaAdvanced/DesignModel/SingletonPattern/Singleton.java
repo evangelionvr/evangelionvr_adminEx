@@ -8,4 +8,5 @@ package com.liaofan.JavaAdvanced.DesignModel.SingletonPattern;
  * @version: 1.0
  */
 public class Singleton {
+
 }
