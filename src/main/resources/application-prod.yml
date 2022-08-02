@@ -3,4 +3,4 @@ person:
   age: 38
 
 server:
-  port: 8080
+  port: 9081

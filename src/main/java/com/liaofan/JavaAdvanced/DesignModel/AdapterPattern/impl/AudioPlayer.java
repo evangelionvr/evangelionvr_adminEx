@@ -6,7 +6,7 @@ import com.liaofan.JavaAdvanced.DesignModel.AdapterPattern.adpter.MediaAdapter;
 /**
  * @author 廖钒
  * @ClassName AudioPlayer
- * @description: TODO
+ * @description: 音频播放器
  * @datetime 2022年 06月 17日 14:41
  * @version: 1.0
  */

@@ -3,7 +3,7 @@ package com.liaofan.JavaAdvanced.DesignModel.BridgePattern.CaiNiao;
 /**
  * @author 廖钒
  * @ClassName GreenCircle
- * @description: TODO
+ * @description: 绿色方形
  * @datetime 2022年 06月 27日 16:12
  * @version: 1.0
  */

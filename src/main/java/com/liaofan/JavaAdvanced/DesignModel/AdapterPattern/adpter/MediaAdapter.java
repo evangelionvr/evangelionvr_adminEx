@@ -8,7 +8,7 @@ import com.liaofan.JavaAdvanced.DesignModel.AdapterPattern.impl.VLCPlayer;
 /**
  * @author 廖钒
  * @ClassName MediaAdapter
- * @description: TODO
+ * @description: 适配器模式_电影
  * @datetime 2022年 06月 17日 14:27
  * @version: 1.0
  */

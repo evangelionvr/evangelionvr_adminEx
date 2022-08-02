@@ -5,7 +5,7 @@ import com.liaofan.JavaAdvanced.DesignModel.AdapterPattern.impl.AudioPlayer;
 /**
  * @author 廖钒
  * @ClassName AdapterPattern
- * @description: TODO
+ * @description: 适配器模式
  * @datetime 2022年 06月 17日 14:46
  * @version: 1.0
  */

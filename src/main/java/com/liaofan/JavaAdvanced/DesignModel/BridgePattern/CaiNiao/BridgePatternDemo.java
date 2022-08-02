@@ -3,7 +3,7 @@ package com.liaofan.JavaAdvanced.DesignModel.BridgePattern.CaiNiao;
 /**
  * @author 廖钒
  * @ClassName BridgePatternDemo
- * @description: TODO
+ * @description: 桥接模式demo
  * @datetime 2022年 06月 27日 16:18
  * @version: 1.0
  */

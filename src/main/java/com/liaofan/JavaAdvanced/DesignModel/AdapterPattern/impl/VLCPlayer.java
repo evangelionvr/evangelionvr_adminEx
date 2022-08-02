@@ -5,7 +5,7 @@ import com.liaofan.JavaAdvanced.DesignModel.AdapterPattern.AdvancedMediaPlayer;
 /**
  * @author 廖钒
  * @ClassName VLCPlayer
- * @description: TODO
+ * @description: VLC播放器
  * @datetime 2022年 06月 17日 14:25
  * @version: 1.0
  */

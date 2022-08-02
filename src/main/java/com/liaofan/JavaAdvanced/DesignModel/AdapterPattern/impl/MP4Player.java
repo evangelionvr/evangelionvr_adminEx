@@ -5,7 +5,7 @@ import com.liaofan.JavaAdvanced.DesignModel.AdapterPattern.AdvancedMediaPlayer;
 /**
  * @author 廖钒
  * @ClassName MP4Player
- * @description: TODO
+ * @description: Mp4播放器
  * @datetime 2022年 06月 17日 14:26
  * @version: 1.0
  */

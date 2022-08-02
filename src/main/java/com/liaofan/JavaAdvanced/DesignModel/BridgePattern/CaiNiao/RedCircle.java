@@ -2,7 +2,7 @@ package com.liaofan.JavaAdvanced.DesignModel.BridgePattern.CaiNiao;
 
 /**
  * @author 廖钒
- * @ClassName RedCircle
+ * @ClassName 红色方形
  * @description: TODO
  * @datetime 2022年 06月 27日 16:12
  * @version: 1.0
