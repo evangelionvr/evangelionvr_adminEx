@@ -12,17 +12,17 @@ package com.liaofan.JavaAdvanced.DesignModel.SingletonPattern;
  * 缺点：必须加锁 synchronized 才能保证单例，但加锁会影响效率。
  * getInstance() 的性能对应用程序不是很关键（该方法使用不太频繁）。
  */
-public class SingletonObject_Lazy {
-    private static SingletonObject_Lazy instance;
+public class SingletonObject_LazyMan {
+    private static SingletonObject_LazyMan instance;
 
     /**
      * 构造方法
      */
-    private SingletonObject_Lazy() {}
+    private SingletonObject_LazyMan() {}
 
-    public static synchronized SingletonObject_Lazy getInstance() {
+    public static synchronized SingletonObject_LazyMan getInstance() {
         if(instance == null) {
-            instance = new SingletonObject_Lazy();
+            instance = new SingletonObject_LazyMan();
         }
 
         return instance;

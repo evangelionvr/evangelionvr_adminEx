@@ -5,8 +5,11 @@ public class SingletonPatternDemo {
         SingletonObject instance = SingletonObject.getInstance();
         instance.showMessage();
 
-        SingletonObject_Lazy instance1_lazy = SingletonObject_Lazy.getInstance();
+        SingletonObject_LazyMan instance1_lazy = SingletonObject_LazyMan.getInstance();
         instance1_lazy.showMessage();
+
+        SingetonObject_HungryMan_Recommend instatance2_HungryMan = SingetonObject_HungryMan_Recommend.getInstance();
+        instatance2_HungryMan.showMessage();
 
     }
 }
